@@ -18,7 +18,55 @@ body {
     gap:20px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, auto);
+    
 
+}
 
+.contenedor div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .footer {
+    background-color: white;
+    padding: 20px;
+    border-radius: 4px;
+}
 
+.contenedor .header{
+    background-color: #12203e;
+    color: white;
+    grid-column: span 3;
+
+}
+
+.contenedor .contenido{
+    grid-column: span 2;
+}
+
+.contenedor .sidebar{
+    background-color:#faa43d ;
+    
+    grid-column: 3/4;
+    grid-row: span 2;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor .widget-1,
+.contenedor .widget-2 {
+    background-color: #55a8fd;
+    color: #fff;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor .footer{
+    background-color: #12203e;
+    color: #fff;
+    grid-column: span 3;
 }
