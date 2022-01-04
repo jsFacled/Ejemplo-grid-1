@@ -45,6 +45,7 @@ body {
 
 .contenedor .sidebar{
     background-color:#faa43d ;
+    min-height: 100px;
     
     grid-column: 3/4;
     grid-row: span 2;
@@ -69,4 +70,20 @@ body {
     background-color: #12203e;
     color: #fff;
     grid-column: span 3;
+}
+
+
+@media screen and (max-width: 760px) {
+    .contenedor .contenido {
+         grid-column: 1/-1;
+    }
+       
+    .contenedor .sidebar {
+        grid-column: 1/-1;
+   }
+
+   .contenedor .widget-1{
+       grid-column: span 2;
+   }
+    
 }
